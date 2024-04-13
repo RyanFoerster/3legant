@@ -1,0 +1,18 @@
+<div class="w-fit flex flex-col gap-3">
+  <div class="relative w-fit">
+    <img [src]="imgSrc()" alt="dip-dye" />
+    <p class="bg-white text-black absolute top-3 left-3" hlmBadge>New</p>
+    <button class="absolute w-3/4 bottom-5 left-1/2 -translate-x-1/2" hlmBtn>
+      Add to cart
+    </button>
+  </div>
+  <div class="flex gap-1">
+    <img src="../../../assets/icons/star.svg" alt="star" />
+    <img src="../../../assets/icons/star.svg" alt="star" />
+    <img src="../../../assets/icons/star.svg" alt="star" />
+    <img src="../../../assets/icons/star.svg" alt="star" />
+    <lucide-icon name="star"></lucide-icon>
+  </div>
+  <h3 class="font-semibold w-2/3">{{ title() }}</h3>
+  <p class="text-sm font-semibold">{{ price() }}</p>
+</div>

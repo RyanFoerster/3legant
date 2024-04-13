@@ -1,0 +1,33 @@
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+<section class="flex flex-col mb-8 gap-10">
+  <div class="flex justify-between items-center mx-8">
+    <h2 class="font-poppins text-4xl font-medium">Just In</h2>
+    <div class="flex gap-4">
+      @for (item of newIn; track $index) {
+
+      <div
+        [ngClass]="
+          item.active ? 'dot-active' : 'h-3 w-3 rounded-full bg-gray-400'
+        "
+        class="cursor-pointer"
+        (click)="changeActive($index)"
+      ></div>
+
+      }
+    </div>
+  </div>
+
+  <div class="mx-8 flex">
+    @for (item of newIn; track $index) {
+    <app-shop-card
+      [title]="item.title"
+      [imgSrc]="item.imgSrc"
+      [price]="item.price"
+      [active]="item.active"
+      (click)="changeActive($index)"
+      [hidden]="!item.active"
+    />
+    }
+  </div>
+</section>

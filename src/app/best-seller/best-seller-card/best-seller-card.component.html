@@ -1,0 +1,41 @@
+<div class="w-fit flex flex-col gap-3 mb-10">
+  <div class="relative">
+    <p
+      class="bg-white text-black font-bold rounded-sm absolute top-3 left-3"
+      hlmBadge
+    >
+      HOT
+    </p>
+    @if (discount()) {
+    <p
+      class="bg-[#38CB89] text-white font-bold rounded-sm absolute top-10 left-3"
+      hlmBadge
+    >
+      -50%
+    </p>
+    }
+
+    <img class="w-full" [src]="imgSrc()" [alt]="title()" />
+  </div>
+  <div class="flex flex-col gap-1">
+    <div class="flex gap-1">
+      <img class="w-4" src="../../../assets/icons/star.svg" alt="star" />
+      <img class="w-4" src="../../../assets/icons/star.svg" alt="star" />
+      <img class="w-4" src="../../../assets/icons/star.svg" alt="star" />
+      <img class="w-4" src="../../../assets/icons/star.svg" alt="star" />
+      <lucide-icon class="w-4" name="star"></lucide-icon>
+    </div>
+    <p
+      class="w-40 font-semibold text-ellipsis whitespace-nowrap overflow-hidden"
+    >
+      {{ title() }}
+    </p>
+
+    <div class="flex gap-3 items-end">
+      <p class="text-xs font-semibold">{{ price() }}</p>
+      @if (oldPrice()) {
+      <p class="text-xs text-gray-400 line-through">{{ oldPrice() }}</p>
+      }
+    </div>
+  </div>
+</div>
