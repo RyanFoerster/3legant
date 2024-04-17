@@ -1,8 +1,10 @@
-<div class="container flex flex-col gap-4 mt-10 mb-10">
-  @for (collection of collections; track $index) {
-  <app-collection-card
-    [imgSrc]="collection.imgSrc"
-    [title]="collection.title"
-  />
-  }
+<div class="container">
+  <div class="grid grid-cols-2 max-sm:grid-cols-1 gap-4 my-10">
+    @for (collection of collections; track $index) {
+    <app-collection-card
+      [imgSrc]="collection.imgSrc"
+      [title]="collection.title"
+    />
+    }
+  </div>
 </div>

@@ -1,7 +1,36 @@
 <header class="flex justify-between items-center px-8 py-4">
   <div class="flex justify-center items-center gap-1">
-    <lucide-icon class="cursor-pointer" name="menu"></lucide-icon>
+    <lucide-icon
+      class="cursor-pointer max-sm:block hidden"
+      name="menu"
+    ></lucide-icon>
     <p class="font-poppins font-medium text-lg">3legant.</p>
   </div>
-  <img src="../../assets/icons/cart-button.svg" alt="cart-button" />
+  <nav class="max-sm:hidden">
+    <ul class="flex justify-center items-center gap-10">
+      <li class="font-poppins font-medium text-sm">Home</li>
+      <li class="font-poppins font-medium text-sm flex items-center gap-1">
+        Shop
+        <lucide-icon class="w-4" name="chevron-down"></lucide-icon>
+      </li>
+      <li class="font-poppins font-medium text-sm flex items-center gap-1">
+        Product
+        <lucide-icon class="w-4" name="chevron-down"></lucide-icon>
+      </li>
+      <li class="font-poppins font-medium text-sm">Contact Us</li>
+    </ul>
+  </nav>
+  <div class="flex justify-center items-center gap-4">
+    <img
+      class="max-sm:hidden"
+      src="../../assets/icons/search 02.svg"
+      alt="search"
+    />
+    <img
+      class="max-sm:hidden"
+      src="../../assets/icons/user-circle.svg"
+      alt="user-circle"
+    />
+    <img src="../../assets/icons/cart-button.svg" alt="cart-button" />
+  </div>
 </header>

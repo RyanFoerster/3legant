@@ -1,8 +1,8 @@
-<div class="container flex flex-col gap-12 mt-10 mb-10">
-  <h2 class="font-poppins font-medium text-4xl text-center">
+<div class="container flex flex-col gap-12">
+  <h2 class="font-poppins font-medium text-4xl text-center mt-10">
     Shop By Categories
   </h2>
-  <div class="grid grid-cols-2 gap-6">
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-10">
     @for (category of categories; track $index) {
     <app-category-card [imgSrc]="category.imgSrc" [title]="category.title" />
     }

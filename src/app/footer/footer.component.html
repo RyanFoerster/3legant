@@ -1,0 +1,14 @@
+<footer class="relative flex bg-[#E8ECEF]">
+  <div class="container grid grid-cols-1 lg:grid-cols-4">
+    <app-info-footer />
+
+    @for (content of contents; track $index) {
+    <app-accordion-footer
+      [title]="content.title"
+      [contents]="content.contents"
+    />
+    }
+    <app-newsletter-footer />
+    <app-copyright class="lg:col-span-4" />
+  </div>
+</footer>

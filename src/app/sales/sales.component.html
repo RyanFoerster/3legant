@@ -1,4 +1,7 @@
-<div class="flex justify-center items-center gap-3 p-3 bg-blue-500 text-white">
+<div
+  class="flex relative justify-center items-center gap-3 p-3 bg-blue-500 text-white"
+  [ngStyle]="{ display: isVisible() ? 'flex' : 'none' }"
+>
   <img src="../../assets/icons/ticket-percent.svg" alt="ticket percent" />
   <p class="text-sm font-semibold">30% off store wide - Limited time!</p>
   <a
@@ -6,5 +9,10 @@
     href="#"
     >Shop now <lucide-icon class="w-4 h-4" name="arrow-right"></lucide-icon>
   </a>
-  <lucide-icon class="max-sm:block hidden w-5 ml-2" name="x"></lucide-icon>
+
+  <lucide-icon
+    class="w-5 ml-2 absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer"
+    name="x"
+    (click)="toggle()"
+  ></lucide-icon>
 </div>

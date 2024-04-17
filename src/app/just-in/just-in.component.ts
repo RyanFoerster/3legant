@@ -42,12 +42,6 @@ export class JustInComponent {
       active: false,
     },
     {
-      title: '1996 Retro Nuptse Jacket in Black',
-      imgSrc: '../../../assets/images/just-in/1996.png',
-      price: '$30.00',
-      active: false,
-    },
-    {
       title: 'Paul Quilted Nylon Puffer bomber jacket',
       imgSrc: '../../../assets/images/just-in/quilted.png',
       price: '$300.00',
@@ -60,13 +54,4 @@ export class JustInComponent {
       active: false,
     },
   ];
-
-  activeIndex = 0;
-
-  changeActive(index: number) {
-    for (let i = 0; i < this.newIn.length; i++) {
-      this.newIn[i].active = i === index;
-    }
-    this.activeIndex = index;
-  }
 }

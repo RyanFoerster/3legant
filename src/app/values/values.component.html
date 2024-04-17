@@ -1,0 +1,11 @@
+<div
+  class="container grid lg:place-items-center max-sm:grid-cols-2 grid-cols-4 gap-x-2 gap-y-6 mb-8"
+>
+  @for (item of values; track $index) {
+  <app-card-values
+    [imgSrc]="item.imgSrc"
+    [title]="item.title"
+    [description]="item.description"
+  />
+  }
+</div>

@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      backgroundImage: {
+        "promotion-video": "url('assets/images/video.png')",
+      },
     },
 
     animation: {

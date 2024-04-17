@@ -1,0 +1,25 @@
+<div>
+  <div hlmAccordion class="mt-8 lg:hidden">
+    <div hlmAccordionItem class="border-none">
+      <button hlmAccordionTrigger class="font-semibold">
+        {{ title() }}
+        <hlm-icon hlmAccIcon />
+      </button>
+      @for (content of contents(); track $index) {
+      <brn-accordion-content hlm class="text-sm">
+        {{ content }}
+      </brn-accordion-content>
+      }
+    </div>
+  </div>
+  <div class="mt-20 hidden lg:grid lg:gap-10">
+    <p class="font-poppins font-medium">{{ title() }}</p>
+
+    <div class="grid gap-6">
+      @for (content of contents(); track $index) {
+      <p class="text-sm">{{ content }}</p>
+
+      }
+    </div>
+  </div>
+</div>

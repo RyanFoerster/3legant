@@ -1,6 +1,8 @@
-<div class="container flex flex-col gap-4">
-  <h2 class="font-poppins font-medium text-4xl text-center">Best Seller</h2>
-  <div class="grid grid-cols-2 gap-x-2 gap-y-4">
+<div class="container flex flex-col max-sm:gap-4 gap-12">
+  <h2 class="font-poppins font-medium text-4xl text-center mt-10">
+    Best Seller
+  </h2>
+  <div class="grid grid-cols-2 gap-x-2 lg:grid-cols-4 lg:gap-x-6">
     @for (item of articles; track $index) {
     <app-best-seller-card
       [imgSrc]="item.imgSrc"

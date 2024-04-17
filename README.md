@@ -1,27 +1,37 @@
-# 3legant
+<h1 align="center">Welcome to 3legant 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.1.
+> This landing page was created to familiarize myself with TailwindCSS and more specifically with the responsive side.
+>
+> I used this figma model for the design: https://www.figma.com/file/1QEk20NzSIIRxX4mNJehtp/3legant-E-Commerce-UI-Design-Template-(Community)?type=design&node-id=3-674&mode=design&t=5PKrXbGQEgnoc2iu-0
 
-## Development server
+![Desktop version](image.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![Mobile version](image-1.png)
 
-## Code scaffolding
+## Install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```sh
+npm install
+```
 
-## Build
+## Usage
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```sh
+ng serve
+```
 
-## Running unit tests
+## Run tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+npm run test
+```
 
-## Running end-to-end tests
+## Author
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+👤 **Ryan Foerster**
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Github: [@RyanFoerster](https://github.com/RyanFoerster)
+- LinkedIn: [@https:\/\/www.linkedin.com\/in\/ryan-foerster](https://linkedin.com/in/https://www.linkedin.com/in/ryan-foerster)
