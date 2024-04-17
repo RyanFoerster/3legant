@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { HlmButtonDirective } from '../../../components/ui-button-helm/src/lib/hlm-button.directive';
+import { HlmButtonDirective } from '../../../components/ui-button-helm/src/index';
 
 @Component({
   selector: 'app-hero',

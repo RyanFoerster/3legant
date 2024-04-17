@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { LucideAngularModule } from 'lucide-angular';
-import { HlmBadgeDirective } from '../../../../components/ui-badge-helm/src/lib/hlm-badge.directive';
+import { HlmBadgeDirective } from '../../../../components/ui-badge-helm/src/index';
 
 @Component({
   selector: 'app-best-seller-card',

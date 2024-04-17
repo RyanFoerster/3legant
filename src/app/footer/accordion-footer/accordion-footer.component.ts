@@ -6,7 +6,7 @@ import {
   HlmAccordionItemDirective,
   HlmAccordionTriggerDirective,
 } from '../../../../components/ui-accordion-helm/src/index';
-import { HlmIconComponent } from '../../../../components/ui-icon-helm/src/lib/hlm-icon.component';
+import { HlmIconComponent } from '../../../../components/ui-icon-helm/src/index';
 
 @Component({
   selector: 'app-accordion-footer',
