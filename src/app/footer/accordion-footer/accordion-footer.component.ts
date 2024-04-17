@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { BrnAccordionContentComponent } from '@spartan-ng/ui-accordion-brain';
 import {
   HlmAccordionContentDirective,
   HlmAccordionDirective,
@@ -21,7 +20,6 @@ import { HlmIconComponent } from '../../../../components/ui-icon-helm/src/lib/hl
     HlmAccordionIconDirective,
     HlmAccordionItemDirective,
     HlmAccordionTriggerDirective,
-    BrnAccordionContentComponent,
     HlmIconComponent,
   ],
 })
