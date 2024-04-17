@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { HlmBadgeDirective } from '@spartan-ng/ui-badge-helm';
 import { LucideAngularModule } from 'lucide-angular';
+import { HlmBadgeDirective } from '../../../../components/ui-badge-helm/src/lib/hlm-badge.directive';
 import { HlmButtonDirective } from '../../../../components/ui-button-helm/src/lib/hlm-button.directive';
 @Component({
   selector: 'app-shop-card',

@@ -6,8 +6,8 @@ import {
   HlmAccordionIconDirective,
   HlmAccordionItemDirective,
   HlmAccordionTriggerDirective,
-} from '@spartan-ng/ui-accordion-helm';
-import { HlmIconComponent } from '@spartan-ng/ui-icon-helm';
+} from '../../../../components/ui-accordion-helm/src/index';
+import { HlmIconComponent } from '../../../../components/ui-icon-helm/src/lib/hlm-icon.component';
 
 @Component({
   selector: 'app-accordion-footer',

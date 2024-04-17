@@ -2,30 +2,13 @@ import { NgClass, NgStyle } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ShopCardComponent } from './shop-card/shop-card.component';
 
-import {
-  HlmCarouselComponent,
-  HlmCarouselContentComponent,
-  HlmCarouselItemComponent,
-  HlmCarouselNextComponent,
-  HlmCarouselPreviousComponent,
-} from '@spartan-ng/ui-carousel-helm';
-
 @Component({
   selector: 'app-just-in',
   standalone: true,
   templateUrl: './just-in.component.html',
   styleUrl: './just-in.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [
-    NgClass,
-    NgStyle,
-    ShopCardComponent,
-    HlmCarouselComponent,
-    HlmCarouselContentComponent,
-    HlmCarouselItemComponent,
-    HlmCarouselNextComponent,
-    HlmCarouselPreviousComponent,
-  ],
+  imports: [NgClass, NgStyle, ShopCardComponent],
 })
 export class JustInComponent {
   newIn: { title: string; imgSrc: string; price: string; active: boolean }[] = [
